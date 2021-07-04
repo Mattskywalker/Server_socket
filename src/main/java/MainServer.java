@@ -7,7 +7,7 @@ import java.net.Socket;
 public class MainServer {
 	public static void main(String[] args) {
 		try {
-			ServerSocket server = new ServerSocket(1234);
+			ServerSocket server = new ServerSocket(8080);
 			
 			System.out.println("Esperando conexao...");
 			Socket conexaoCliente = server.accept();
@@ -16,7 +16,7 @@ public class MainServer {
 			InputStream is = conexaoCliente.getInputStream();
 			OutputStream os = conexaoCliente.getOutputStream();
 			
-			DataOutputStream dos = new DataOutputStream(os); 
+			DataOutputStream dos = new DataOutputStream(os);
 			
 			String resp = "HTTP/1.1 200 OK\nContent-Type:text/html\n\n" + 
 					"<html><title> Aula ISI - </title><h3> Aula ISI</h3></html>";
