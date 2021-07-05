@@ -10,6 +10,7 @@ public class MainServer {
 
 			//Luana vai botar Mateus Na Lei
 			//Mas Luana é uma boa pessoa e não utilizará desta lei
+			//mamem meu ovo, desgraças
 
 			System.out.println("Esperando conexao...");
 			Socket conexaoCliente = server.accept();
