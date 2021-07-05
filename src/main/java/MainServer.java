@@ -8,7 +8,7 @@ public class MainServer {
 		try {
 			ServerSocket server = new ServerSocket(8080);
 
-			//VINI DÀ O CU
+			//Luana vai botar Mateus Na Lei
 
 			System.out.println("Esperando conexao...");
 			Socket conexaoCliente = server.accept();
